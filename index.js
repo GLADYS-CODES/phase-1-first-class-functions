@@ -1,7 +1,17 @@
+// function receivesAFunction(callback) {
+//     callback();
+//   callback();
+// }
+
 function receivesAFunction(callback) {
-    callback();
   callback();
 }
+function myCallback() {
+  console.log("this is a callback");
+}
+
+receivesAFunction(myCallback);
+
 
 function returnsANamedFunction() {
     const namedFn = () => console.log("this is a named function");
